@@ -28,3 +28,15 @@ togBtn.addEventListener('click', function (event) {
     fullFormat.classList.toggle('demo-hidden');
     shortFormat.classList.toggle('demo-visible');
 })
+
+function getNumbers(from, to) {
+    if (from > to) {
+      return
+    } 
+    console.log(from)
+    from += 1;
+    
+    getNumbers(from, to)
+  }
+
+  getNumbers(5, 20)
